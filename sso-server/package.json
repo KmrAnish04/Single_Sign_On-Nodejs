@@ -1,0 +1,20 @@
+{
+  "name": "sso-server",
+  "version": "1.0.0",
+  "description": "The sso service enables the applications to authenticate the users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "hashids": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^10.0.0"
+  }
+}
