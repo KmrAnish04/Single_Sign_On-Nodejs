@@ -4,7 +4,8 @@ const isAuthenticated = (req, res, next) => {
     console.log('redirectUrl :>> ', redirectUrl);
     console.log('user :>> ', req.session.user);
     if (!req.session.user) {
-        return res.redirect(`http://127.0.0.1:3010/sso-server/login?redirectURL=${redirectUrl}`);
+        // return res.redirect(`http://127.0.0.1:3010/sso-server/login?redirectURL=${redirectUrl}`);
+        return res.redirect(`http://localhost:3000/api/v1/auth/login?redirectURL=${redirectUrl}`);
     }
 
     next();

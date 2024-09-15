@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { publicKey } = require('./config/index.config.js').keys;
 
-const ISSUER = "single-sign-on";
+const ISSUER = "SSO-Server-Anish";
 
 const verifyJwtToken = (token) =>
     new Promise((resolve, reject) => {
